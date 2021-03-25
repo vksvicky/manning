@@ -17,6 +17,7 @@ public class BugsTests {
     private SearchResults searchResults;
     private AssetVendor partnerVendor;
     private SearchResultHotspotOptimizer optimizer;
+    int topicId = 0;
 
     @BeforeEach
     public void setUp() {
@@ -74,6 +75,43 @@ public class BugsTests {
     private void thenHotspotDoesNotHave(HotspotKey key, Asset... forbidden) {
         for (var asset : forbidden) {
             assertFalse(searchResults.getHotspot(key).getMembers().contains(asset));
+        }
+    }
+
+    private List<Asset> givenAssetsWithTopics(AssetVendor vendor, int count, AssetTopic... topics) {
+        var result = new ArrayList<Asset>();
+        for (var i = 0; i < count; ++i)
+            result.add(givenAssetWithTopics(vendor, topics));
+
+        return result;
+    }
+
+    private Asset givenAssetWithTopics(AssetVendor vendor, AssetTopic... topics) {
+        var actualTopics = new ArrayList<AssetTopic>();
+        for (var topic : topics)
+            actualTopics.add(new AssetTopic(topic.getId(), topic.getDisplayName()));
+
+        var result = new Asset(null, null, null, null, getPurchaseInfo(), getPurchaseInfo(), actualTopics, vendor);
+        searchResults.addFound(result);
+        return result;
+    }
+
+    private AssetTopic makeTopic() {
+        return new AssetTopic("id-" + (++topicId), "anything");
+    }
+
+    private void setHotTopics(AssetTopic... topics) {
+        optimizer.setHotTopics(() -> Arrays.asList(topics));
+    }
+
+    private void thenHotspotDoesNotHave(HotspotKey key, List<Asset> forbidden) {
+        for (var asset : forbidden)
+            assertFalse(searchResults.getHotspot(key).getMembers().contains(asset));
+    }
+
+    private void thenHotspotHas(HotspotKey hotspotKey, List<Asset> expectedAssets) {
+        for (var expectedAsset : expectedAssets) {
+            Assertions.assertTrue(searchResults.getHotspot(hotspotKey).getMembers().contains(expectedAsset));
         }
     }
 }
