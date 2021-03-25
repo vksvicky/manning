@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/initial-commented/HotspotOptimizerLibrary/HotspotOptimizerLibrary.iml" filepath="$PROJECT_DIR$/initial-commented/HotspotOptimizerLibrary/HotspotOptimizerLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/initial-uncommented/HotspotOptimizerLibrary/HotspotOptimizerLibrary (1).iml" filepath="$PROJECT_DIR$/initial-uncommented/HotspotOptimizerLibrary/HotspotOptimizerLibrary (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/initial-commented/RootProject.iml" filepath="$PROJECT_DIR$/initial-commented/RootProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/initial-uncommented/RootProject (1).iml" filepath="$PROJECT_DIR$/initial-uncommented/RootProject (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/initial-commented/SearchResults/SearchResults.iml" filepath="$PROJECT_DIR$/initial-commented/SearchResults/SearchResults.iml" />
+      <module fileurl="file://$PROJECT_DIR$/initial-uncommented/SearchResults/SearchResults (1).iml" filepath="$PROJECT_DIR$/initial-uncommented/SearchResults/SearchResults (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/initial-commented/SearchService/SearchService.iml" filepath="$PROJECT_DIR$/initial-commented/SearchService/SearchService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/initial-uncommented/SearchService/SearchService (1).iml" filepath="$PROJECT_DIR$/initial-uncommented/SearchService/SearchService (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/junit.iml" filepath="$PROJECT_DIR$/.idea/junit.iml" />
+    </modules>
+  </component>
+</project>

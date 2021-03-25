@@ -1,0 +1,27 @@
+
+o
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Ÿ˜Ü¡şÿÿÿÿ
+C
+java:S1172/"&Remove these unused method parameters.(ÙëÁ“8äı¦¨†/
+O
+java:S1172#"-Remove this unused method parameter "vendor".(©•³îüÿÿÿÿ8Ñÿ¤¨†/
+£
+java:S1186="€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(îÊ¶öÿÿÿÿÿ8ûÉ¦¨†/
+
+java:S1186:"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ØûÓï8¸Ü¦¨†/
+V
+java:S1144+"4Remove this unused private "getPurchaseInfo" method.(îÆ¥ùÿÿÿÿ8ó §¨†/
+U
+java:S1172"8Remove this unused method parameter "relationshipLevel".(éÓ”Ö8ôŒ¢¨†/
+H
+java:S1172="&Remove these unused method parameters.(îÊ¶öÿÿÿÿÿ8ûÉ¦¨†/
+J
+java:S1144'"-Remove this unused private "getAsset" method.(ƒ®Íü8ó §¨†/
+j
+java:S1854"HRemove this useless assignment to local variable "maximumShowcaseItems".(‘Ü„Üıÿÿÿÿ8“şª¨†/
+
+java:S1186/"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÙëÁ“8äı¦¨†/
+[
+java:S1481"9Remove this unused "maximumShowcaseItems" local variable.(‘Ü„Üıÿÿÿÿ8“şª¨†/
+J
+java:S1172'"-Remove this unused method parameter "vendor".(ƒ®Íü8ó §¨†/
